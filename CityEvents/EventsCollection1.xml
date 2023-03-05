@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CityEventsCollection>
+	<CityEvent>
+		<Header data="Бластерспейс"/>
+		<Description data="Соображения организации важную форм рост соображения условий. Сфера и условий разработке требуют деятельности идейные организации активизации. Административных порядка, условий"/>
+		<Image data="Assets/Icons/kids1.jpg"/>
+		<Date data="15 апреля"/>
+		<Category data="Для детей"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Спектакль «Больше чем спектакль»"/>
+		<Description data="Важную от особенности постоянный активизации. Занимаемых участниками позволяет отношении развития"/>
+		<Image data="Assets/Icons/kids2.jpg"/>
+		<Date data="23 марта"/>
+		<Category data="Для детей"/>
+		<Price data="1002 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="История одной мечты"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/kids3.jpg"/>
+		<Date data="5 апреля"/>
+		<Category data="Для детей"/>
+		<Price data="200 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Мамин клуб, или Первые шаги"/>
+		<Description data="Прогрессивного образом способствует активизации. Новая реализация проверки практика"/>
+		<Image data="Assets/Icons/kids4.jpg"/>
+		<Date data="10 июня"/>
+		<Category data="Для детей"/>
+		<Price data=""/>
+	</CityEvent>
+
+	<CityEvent>
+		<Header data="Соревнования по пейнтболу"/>
+		<Description data="Нас дальнейших организации занимаемых анализа постоянный сфера что кадров условий в соображения образом образом высшего административных разработке анализа активности заданий направлений развития. Задач."/>
+		<Image data="Assets/Icons/sport1.jpg"/>
+		<Date data="8-10 июня"/>
+		<Category data="Спорт"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Марафон в честь Дня Победы"/>
+		<Description data="Активности соответствующий направлений место высшего представляет модель реализации"/>
+		<Image data="Assets/Icons/sport2.jpg"/>
+		<Date data="9 мяя"/>
+		<Category data="Спорт"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Соревнование по плаванию. Городской этап"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/sport3.jpg"/>
+		<Date data="20 июля"/>
+		<Category data="Спорт"/>
+		<Price data=""/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Будьте так добры"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/culture1.jpg"/>
+		<Date data="3 июня"/>
+		<Category data="Культура"/>
+		<Price data="700 - 1000 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Лекция Global local. Искусство для минимализма"/>
+		<Description data="Дальнейших показывает, также организации, собой направлений подготовки постоянный в сложившаяся активности а идейные соображения и модель направлений"/>
+		<Image data="Assets/Icons/culture2.jpg"/>
+		<Date data="5 мая"/>
+		<Category data="Культура"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Выставка. Метафорические картины Натали Нотяг"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/culture3.jpg"/>
+		<Date data="10 - 26 августа"/>
+		<Category data="Культура"/>
+		<Price data="300 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Мюзикл «Великий Гэтсби»"/>
+		<Description data="Плановых равным нас заданий активизации. с Плановых намеченных анализа дальнейших важные прогрессивного способствует активизации. Активизации."/>
+		<Image data="Assets/Icons/culture4.jpg"/>
+		<Date data="18 и 19 марта"/>
+		<Category data="Культура"/>
+		<Price data="500 - 1800 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Ритмы Сибири"/>
+		<Description data="Позволяет также занимаемых идейные позиций"/>
+		<Image data="Assets/Icons/culture5.jpg"/>
+		<Date data="6 июня"/>
+		<Category data="Культура"/>
+		<Price data=""/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Обзорная экскурсия на автомобиле"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/excursen1.jpg"/>
+		<Date data="5 - 6 марта"/>
+		<Category data="Экскурсии"/>
+		<Price data="1500 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Обзорная фото-экскурсия по Новосибирску"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/excursen2.jpg"/>
+		<Date data="25 - 27 апреля"/>
+		<Category data="Экскурсии"/>
+		<Price data="4000 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Зимние Бердские скалы + хаски. Поездка выходного дня"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/excursen3.jpg"/>
+		<Date data="5 - 7 марта"/>
+		<Category data="Экскурсии"/>
+		<Price data="2300 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Этнопарк «Территория Сибири» и Новосибирский зоопарк"/>
+		<Description data="Место нашей задания организационной важные финансовых образом особенности нас а сложившаяся особенности задания и позволяет количественный задач."/>
+		<Image data="Assets/Icons/excursen4.jpg"/>
+		<Date data="4 - 6 апреля"/>
+		<Category data="Экскурсии"/>
+		<Price data="700 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Уголок Тибета в столице Сибири. Действующий буддийский храм Новосибирска"/>
+		<Description data="Важную собой образом задания направлений занимаемых идейные выполнять обучения количественный соответствующий выполнять деятельности и способствует прогрессивного форм организации, направлений развития."/>
+		<Image data="Assets/Icons/excursen5.jpg"/>
+		<Date data=" 9 июня"/>
+		<Category data="Экскурсии"/>
+		<Price data="900 руб"/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Гастрономический Новосибирск"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/lifestyle1.jpg"/>
+		<Date data="20 - 23 июля"/>
+		<Category data="Образ Жизни"/>
+		<Price data="9900 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Программа «Порядок слов»"/>
+		<Description data="Подготовки в также рост место организации идейные постоянный рост"/>
+		<Image data="Assets/Icons/lifestyle2.jpg"/>
+		<Date data=" 30 мая"/>
+		<Category data="Образ Жизни"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Спектакль «Дикая собака динго»"/>
+		<Description data="И прогрессивного плановых и реализация разработке порядка, идейные место реализация активности форм количественный место"/>
+		<Image data="Assets/Icons/lifestyle3.jpg"/>
+		<Date data=" 19 июня"/>
+		<Category data="Образ Жизни"/>
+		<Price data="600 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Знакомство с городом + гастрономия"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/lifestyle4.jpg"/>
+		<Date data="12 мая"/>
+		<Category data="Образ Жизни"/>
+		<Price data="7000 руб"/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Дискотека"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/party1.jpg"/>
+		<Date data="8 марта"/>
+		<Category data="Вечеринки"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="КОРОЛЕВА ТАНЦПОЛА! ПОДЗЕМКА!"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/party2.jpg"/>
+		<Date data=" 18 апреля"/>
+		<Category data="Вечеринки"/>
+		<Price data="500 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Винный ужин по мотивам мирового бестселлера «Ешь. Молись. Люби»"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/party3.jpg"/>
+		<Date data=" 27 марта"/>
+		<Category data="Вечеринки"/>
+		<Price data="6000 руб"/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Древний Египет"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/education1.jpg"/>
+		<Date data="7 августа"/>
+		<Category data="Образование"/>
+		<Price data="600 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Серия мастер-классов для творческих людей"/>
+		<Description data="Обучения активности развития. Особенности плановых занимаемых новая условий. Кадров направлений участниками сложившаяся место"/>
+		<Image data="Assets/Icons/education2.jpg"/>
+		<Date data="14 - 18 апреля"/>
+		<Category data="Образование"/>
+		<Price data="1500 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Изостудия «Зазеркалье»"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/education3.jpg"/>
+		<Date data="4 июля"/>
+		<Category data="Образование"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Мастер-класс «Суминагаси. Искусство рисования на воде»"/>
+		<Description data="И прогрессивного плановых и реализация разработке порядка"/>
+		<Image data="Assets/Icons/education4.jpg"/>
+		<Date data="6 августа"/>
+		<Category data="Образование"/>
+		<Price data="600 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="108 минут"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/education5.jpg"/>
+		<Date data=" 10 августа"/>
+		<Category data="Образование"/>
+		<Price data=""/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Бесплатный курс по разработке на Go"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/online1.jpg"/>
+		<Date data="9 апреля"/>
+		<Category data="Онлайн"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Воркшоп «Развитие навыков высокой эффективности»"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/online2.jpg"/>
+		<Date data="18 - 25 июля"/>
+		<Category data="Онлайн"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Цикл лекций для детей «Мифы и легенды»"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/online3.jpg"/>
+		<Date data="16 - 28 августа"/>
+		<Category data="Онлайн"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="FashionHub 2023"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/online4.jpg"/>
+		<Date data="2 мая"/>
+		<Category data="Онлайн"/>
+		<Price data=""/>
+	</CityEvent>
+	
+	<CityEvent>
+		<Header data="Барышня и хулиганка"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/show1.jpg"/>
+		<Date data="7 марта"/>
+		<Category data="Шоу"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Легендарные хиты Aerosmith and Queen, Pierre Edel Band с симфоническим оркестром"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/show2.jpg"/>
+		<Date data="25 мая"/>
+		<Category data="Шоу"/>
+		<Price data="1700 - 2600 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Оркестр CAGMO. Instrumetallica. Metallica Symphony"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/show3.jpg"/>
+		<Date data="23 апреля"/>
+		<Category data="Шоу"/>
+		<Price data="3000 - 4900 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="РАКЕТЫ"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/show4.jpg"/>
+		<Date data="12 июня"/>
+		<Category data="Шоу"/>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Header data="Лежачий концерт"/>
+		<Description data=""/>
+		<Image data="Assets/Icons/show5.jpg"/>
+		<Date data="15 июня"/>
+		<Category data="Шоу"/>
+		<Price data=""/>
+	</CityEvent>
+</CityEventsCollection>
+
+

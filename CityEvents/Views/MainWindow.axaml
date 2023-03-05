@@ -1,0 +1,194 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CityEvents.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CityEvents.Models"
+		mc:Ignorable="d" d:DesignWidth="1300" d:DesignHeight="800"
+		Width="1300" Height="800"
+        x:Class="CityEvents.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CityEvents">
+		
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	<Window.Resources>
+		<vm:BitmapAssetValueConverter x:Key="convImage"/>
+	</Window.Resources>
+
+	<Window.Styles>
+		<Style Selector="Image.h1">
+			<Setter Property="Width" Value="25"/>
+			<Setter Property="Height" Value="25"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="Image.h2">
+			<Setter Property="Width" Value="320"/>
+			<Setter Property="Height" Value="320"/>
+			<Setter Property="Margin" Value="20,5,20,10"/>
+			<Setter Property="Stretch" Value="UniformToFill"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontWeight" Value="Medium"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.t1">
+			<Setter Property="FontSize" Value="18"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Width" Value="300"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+			<Setter Property="TextAlignment" Value="Left"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.t2">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontWeight" Value="Medium"/>
+			<Setter Property="Width" Value="300"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+			<Setter Property="TextAlignment" Value="Left"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.t3">
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="FontWeight" Value="Normal"/>
+			<Setter Property="Width" Value="300"/>
+			<Setter Property="MaxHeight" Value="80"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+			<Setter Property="TextTrimming" Value="WordEllipsis"/>
+			<Setter Property="TextAlignment" Value="Left"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+	</Window.Styles>
+	
+	
+	<ScrollViewer VerticalScrollBarVisibility="Visible">
+	<TabControl Items="{Binding TabsItems}">
+		<TabControl.ItemTemplate>
+			<DataTemplate>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Classes="h1" Grid.Column="0" Source="{Binding ImagePath, Converter={StaticResource convImage}}"/>
+					<TextBlock Grid.Column="1" Text="{Binding Name}" />
+				</Grid>
+			</DataTemplate>
+		</TabControl.ItemTemplate>
+		<TabControl.ContentTemplate>
+			<DataTemplate>
+				<ItemsControl Items="{Binding EventsCollection}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type local:CityEvent}">
+							<Grid ColumnDefinitions="*" RowDefinitions="2*,*">
+								<Image Classes="h2" Grid.Row="0" Source="{Binding Image, Converter={StaticResource convImage}}"/>
+								<StackPanel Grid.Row="1" Margin="15">
+									<Border Grid.Row="1" Classes="b1">
+										<StackPanel>
+											<TextBlock Classes="t1" Text="{Binding Header}"/>
+											<TextBlock Classes="t1" Text="{Binding Date}"/>
+											<TextBlock Classes="t3" Text="{Binding Description}"/>
+											<TextBlock Classes="t2" Text="{Binding Price}"/>
+										</StackPanel>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</DataTemplate>
+		</TabControl.ContentTemplate>
+	</TabControl>
+	</ScrollViewer>
+	<!--<TabControl>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/show.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Для детей</TextBlock>
+				</Grid>
+			</TabItem.Header>
+			
+		</TabItem>
+		
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/sport.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Спорт</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+		
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/culture.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Культура</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+		
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/excursen.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Экскурсии</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/lifestyle.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Образ жизни</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/party.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Вечеринки</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/education.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Образование</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
+					<Image Grid.Column="0" Source="/Assets/Icons/online.jpg"/>
+					<TextBlock Grid.Column="1" VerticalAlignment="Center">Онлайн</TextBlock>
+				</Grid>
+			</TabItem.Header>
+
+		</TabItem>
+	</TabControl>-->
+</Window>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CityEventsCollection>
+	<CityEvent>
+		<Image data="Assets/Icons/kids1.jpg"/>
+		<Header data="Бластерспейс"/>
+		<Date data="15 апреля"/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data="kids"/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/kids2.jpg"/>
+		<Header data="Спектакль «Больше чем спектакль»"/>
+		<Date data="23 марта"/>
+		<Description data="апппапва прпр пв"/>
+		<Category>
+			<CategoryItem data="kids"/>
+		</Category>
+		<Price data="1002 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/kids3.jpg"/>
+		<Header data="История одной мечты"/>
+		<Date data="5 апреля"/>
+		<Description data="впвп"/>
+		<Category>
+			<CategoryItem data="sport"/>
+		</Category>
+		<Price data="200 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/kids4.jpg"/>
+		<Header data="Мамин клуб, или Первые шаги"/>
+		<Date data="10 июня"/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data="culture"/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/excursen1.jpg"/>
+		<Header data="Обзорная экскурсия на автомобиле"/>
+		<Date data="5 - 6 марта"/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data="excursen"/>
+		</Category>
+		<Price data="1500 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/lifestyle.jpg"/>
+		<Header data="Гастрономический Новосибирск"/>
+		<Date data="20 - 23 июля"/>
+		<Description data="апвп вапв пва"/>
+		<Category>
+			<CategoryItem data="lifestyle"/>
+		</Category>
+		<Price data="9900 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/party1.jpg"/>
+		<Header data="Дискотека"/>
+		<Date data="8 марта"/>
+		<Description data="выа ываыук ук в прукек"/>
+		<Category>
+			<CategoryItem data="party"/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/education1.jpg"/>
+		<Header data="Древний Египет"/>
+		<Date data="7 августа"/>
+		<Description data="Ралв апвпв ауук"/>
+		<Category>
+			<CategoryItem data="education"/>
+		</Category>
+		<Price data="600 руб"/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/online1.jpg"/>
+		<Header data="Бесплатный курс по разработке на Go"/>
+		<Date data="9 апреля"/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data="online"/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>
+	<CityEvent>
+		<Image data="Assets/Icons/show1.jpg"/>
+		<Header data="Барышня и хулиганка"/>
+		<Date data="7 марта"/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data="show"/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>
+	<!--<CityEvent>
+		<Image data="Assets/Icons/.jpg"/>
+		<Header data=""/>
+		<Date data=""/>
+		<Description data=""/>
+		<Category>
+			<CategoryItem data=""/>
+		</Category>
+		<Price data=""/>
+	</CityEvent>-->
+</CityEventsCollection>
+
+
