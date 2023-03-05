@@ -145,7 +145,7 @@
 		<Description data=""/>
 		<Image data="Assets/Icons/lifestyle1.jpg"/>
 		<Date data="20 - 23 июля"/>
-		<Category data="Образ Жизни"/>
+		<Category data="Образ жизни"/>
 		<Price data="9900 руб"/>
 	</CityEvent>
 	<CityEvent>
@@ -153,7 +153,7 @@
 		<Description data="Подготовки в также рост место организации идейные постоянный рост"/>
 		<Image data="Assets/Icons/lifestyle2.jpg"/>
 		<Date data=" 30 мая"/>
-		<Category data="Образ Жизни"/>
+		<Category data="Образ жизни"/>
 		<Price data=""/>
 	</CityEvent>
 	<CityEvent>
@@ -161,7 +161,7 @@
 		<Description data="И прогрессивного плановых и реализация разработке порядка, идейные место реализация активности форм количественный место"/>
 		<Image data="Assets/Icons/lifestyle3.jpg"/>
 		<Date data=" 19 июня"/>
-		<Category data="Образ Жизни"/>
+		<Category data="Образ жизни"/>
 		<Price data="600 руб"/>
 	</CityEvent>
 	<CityEvent>
@@ -169,7 +169,7 @@
 		<Description data=""/>
 		<Image data="Assets/Icons/lifestyle4.jpg"/>
 		<Date data="12 мая"/>
-		<Category data="Образ Жизни"/>
+		<Category data="Образ жизни"/>
 		<Price data="7000 руб"/>
 	</CityEvent>
 	
