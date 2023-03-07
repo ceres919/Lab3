@@ -15,10 +15,10 @@ namespace CityEvents.Models
         {
             get
             {
-                var res = new ObservableCollection<CityEvent>();
-                foreach (var Event in CollectionDeserializer.Item.eventsCollection)
-                    if (Event.Category == Name) res.Add(Event);
-                return res;
+                var itemsCollection = new ObservableCollection<CityEvent>();
+                foreach (var Event in CollectionDeserializer.Item.eventsList)
+                    if (Event.Category == Name) itemsCollection.Add(Event);
+                return itemsCollection;
             }
         }
         public Tabs(string name, string source)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,46 +10,40 @@ namespace CityEvents.Models
 {
     public class CollectionDeserializer
     { 
-        public CityEvent[] eventsCollection;
+        public ObservableCollection<CityEvent> eventsList;
         public string error = "";
         private static readonly CollectionDeserializer item = new();
         public static CollectionDeserializer Item { get => item; }
 
         public CollectionDeserializer() 
         {
-            eventsCollection = Loader();
+            eventsList = Loader();
         }
-
-        private static string Val(XAttribute? a) => a == null ? "" : a.Value;
-        private CityEvent[] Loader()
+        private ObservableCollection<CityEvent> Loader()
         {
-            List<CityEvent> list = new();
+            ObservableCollection<CityEvent> list = new();
             XDocument xdoc;
             try
             {
                 xdoc = XDocument.Load("../../../EventsCollection1.xml");
             }
-            catch (Exception ex) { error = ex.Message; return list.ToArray(); }
-            XElement? events = xdoc.Element("CityEventsCollection");
-            if (events == null) { error = "Не найден корневой тег Events"; return list.ToArray(); }
-            foreach (XElement Event in events.Elements("CityEvent"))
+            catch (Exception ex) 
             {
-                XElement? title = Event.Element("Header");
-                XElement? desc = Event.Element("Description");
-                XElement? img = Event.Element("Image");
-                XElement? date = Event.Element("Date");
-                XElement? cat = Event.Element("Category");
-                XElement? price = Event.Element("Price");
-                if (title == null || img == null || date == null || cat == null) continue;
-                string s_title = Val(title.Attribute("data"));
-                string s_desc = Val(desc.Attribute("data"));
-                string s_img = Val(img.Attribute("data"));
-                string s_date = Val(date.Attribute("data"));
-                string s_cat = Val(cat.Attribute("data"));
-                string s_price = Val(price.Attribute("data"));
-                list.Add(new CityEvent(s_title, s_desc, s_img, s_date, s_cat, s_price));
+                error = ex.Message; return list; 
             }
-            return list.ToArray();
+            XElement? eventsArray = xdoc.Element("ArrayOfCityEvent");
+
+            foreach (XElement Event in eventsArray.Elements("CityEvent"))
+            {
+                string title = Event.Element("Header").Attribute("data")?.Value;
+                string desc = Event.Element("Description").Attribute("data")?.Value;
+                string img = Event.Element("Image").Attribute("data")?.Value;
+                string date = Event.Element("Date").Attribute("data")?.Value;
+                string category = Event.Element("Category").Attribute("data")?.Value;
+                string price = Event.Element("Price").Attribute("data")?.Value;
+                list.Add(new CityEvent(title, desc, img, date, category, price));
+            }
+            return list;
         }
     }
 

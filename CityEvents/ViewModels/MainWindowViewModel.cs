@@ -27,6 +27,5 @@ namespace CityEvents.ViewModels
             new Tabs("Шоу", "Assets/Icons/show.png"),
         };
         public ObservableCollection<Tabs> TabsItems { get => tabsItems; }
-        //public ObservableCollection<CityEvent> EventsCollection { get => eventsCollection; }
     }
 }

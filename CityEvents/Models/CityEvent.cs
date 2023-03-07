@@ -11,17 +11,27 @@ namespace CityEvents.Models
         public CityEvent(string name, string desc, string source, string date, string category, string price)
         {
             Header = name;
+            if (desc != "")
+            {
+                if (desc!.Length > 135)
+                {
+                    int len = desc.Length - 133;
+                    desc = desc[..^len];
+                    desc += "...";
+                }
+            }
             Description = desc;
             Image = source;
             Date = date;
             Category = category;
             Price = price;
         }
+        
         public string Header { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public string Image { get; set; }
         public string Date { get; set; }
         public string Category { get; set; }
-        public string Price { get; set; }
+        public string? Price { get; set; }
     }
 }

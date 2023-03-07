@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<CityEventsCollection>
+<ArrayOfCityEvent>
 	<CityEvent>
 		<Header data="Бластерспейс"/>
 		<Description data="Соображения организации важную форм рост соображения условий. Сфера и условий разработке требуют деятельности идейные организации активизации. Административных порядка, условий"/>
@@ -312,6 +312,6 @@
 		<Category data="Шоу"/>
 		<Price data=""/>
 	</CityEvent>
-</CityEventsCollection>
+</ArrayOfCityEvent>
 
 

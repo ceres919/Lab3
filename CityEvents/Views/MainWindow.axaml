@@ -12,8 +12,6 @@
 		
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 	<Window.Resources>
@@ -30,7 +28,7 @@
 		<Style Selector="Image.h2">
 			<Setter Property="Width" Value="320"/>
 			<Setter Property="Height" Value="320"/>
-			<Setter Property="Margin" Value="20,5,20,10"/>
+			<Setter Property="Margin" Value="0,0,0,5"/>
 			<Setter Property="Stretch" Value="UniformToFill"/>
 			<Setter Property="HorizontalAlignment" Value="Center"/>
 			<Setter Property="VerticalAlignment" Value="Center"/>
@@ -45,6 +43,7 @@
 			<Setter Property="FontSize" Value="18"/>
 			<Setter Property="FontWeight" Value="Bold"/>
 			<Setter Property="Width" Value="300"/>
+			<Setter Property="Margin" Value="0,0,0,5"/>
 			<Setter Property="TextWrapping" Value="Wrap"/>
 			<Setter Property="TextAlignment" Value="Left"/>
 			<Setter Property="VerticalAlignment" Value="Center"/>
@@ -61,16 +60,17 @@
 			<Setter Property="FontSize" Value="14"/>
 			<Setter Property="FontWeight" Value="Normal"/>
 			<Setter Property="Width" Value="300"/>
-			<Setter Property="MaxHeight" Value="80"/>
+			<Setter Property="MaxHeight" Value="100"/>
 			<Setter Property="TextWrapping" Value="Wrap"/>
-			<Setter Property="TextTrimming" Value="WordEllipsis"/>
 			<Setter Property="TextAlignment" Value="Left"/>
 			<Setter Property="VerticalAlignment" Value="Center"/>
 		</Style>
+		<Style Selector="Grid.t">
+			<Setter Property="Height" Value="565"/>
+			<Setter Property="Margin" Value="10,10,10,10"/>
+		</Style>
 	</Window.Styles>
 	
-	
-	<ScrollViewer VerticalScrollBarVisibility="Visible">
 	<TabControl Items="{Binding TabsItems}">
 		<TabControl.ItemTemplate>
 			<DataTemplate>
@@ -82,113 +82,33 @@
 		</TabControl.ItemTemplate>
 		<TabControl.ContentTemplate>
 			<DataTemplate>
-				<ItemsControl Items="{Binding EventsCollection}">
-					<ItemsControl.ItemTemplate>
-						<DataTemplate DataType="{x:Type local:CityEvent}">
-							<Grid ColumnDefinitions="*" RowDefinitions="2*,*">
-								<Image Classes="h2" Grid.Row="0" Source="{Binding Image, Converter={StaticResource convImage}}"/>
-								<StackPanel Grid.Row="1" Margin="15">
-									<Border Grid.Row="1" Classes="b1">
-										<StackPanel>
-											<TextBlock Classes="t1" Text="{Binding Header}"/>
-											<TextBlock Classes="t1" Text="{Binding Date}"/>
-											<TextBlock Classes="t3" Text="{Binding Description}"/>
-											<TextBlock Classes="t2" Text="{Binding Price}"/>
+				<ScrollViewer AllowAutoHide="True">
+					<ItemsControl Items="{Binding EventsCollection}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate DataType="{x:Type local:CityEvent}">
+									<Grid Classes="t" ColumnDefinitions="*" RowDefinitions="2*,*">
+										<Image Classes="h2" Grid.Row="0" Source="{Binding Image, Converter={StaticResource convImage}}"/>
+										<StackPanel Grid.Row="1" Margin="15">
+											<Border Grid.Row="1" Classes="b1">
+												<StackPanel>
+													<TextBlock Classes="t1" Text="{Binding Header}"/>
+													<TextBlock Classes="t1" Text="{Binding Date}"/>
+													<TextBlock Classes="t3" Text="{Binding Description}"/>
+													<TextBlock Classes="t2" Text="{Binding Price}"/>
+												</StackPanel>
+											</Border>
 										</StackPanel>
-									</Border>
-								</StackPanel>
-							</Grid>
-						</DataTemplate>
-					</ItemsControl.ItemTemplate>
-					<ItemsControl.ItemsPanel>
-						<ItemsPanelTemplate>
-							<WrapPanel/>
-						</ItemsPanelTemplate>
-					</ItemsControl.ItemsPanel>
-				</ItemsControl>
+									</Grid>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+						<ItemsControl.ItemsPanel>
+							<ItemsPanelTemplate>
+								<WrapPanel/>
+							</ItemsPanelTemplate>
+						</ItemsControl.ItemsPanel>
+					</ItemsControl>
+				</ScrollViewer>
 			</DataTemplate>
 		</TabControl.ContentTemplate>
 	</TabControl>
-	</ScrollViewer>
-	<!--<TabControl>
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/show.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Для детей</TextBlock>
-				</Grid>
-			</TabItem.Header>
-			
-		</TabItem>
-		
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/sport.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Спорт</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-		
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/culture.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Культура</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-		
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/excursen.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Экскурсии</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/lifestyle.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Образ жизни</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/party.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Вечеринки</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/education.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Образование</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-
-		<TabItem>
-			<TabItem.Header>
-				<Grid ColumnDefinitions="*, *" RowDefinitions="*">
-					<Image Grid.Column="0" Source="/Assets/Icons/online.jpg"/>
-					<TextBlock Grid.Column="1" VerticalAlignment="Center">Онлайн</TextBlock>
-				</Grid>
-			</TabItem.Header>
-
-		</TabItem>
-	</TabControl>-->
 </Window>
