@@ -86,19 +86,19 @@
 					<ItemsControl Items="{Binding EventsCollection}">
 						<ItemsControl.ItemTemplate>
 							<DataTemplate DataType="{x:Type local:CityEvent}">
-									<Grid Classes="t" ColumnDefinitions="*" RowDefinitions="2*,*">
-										<Image Classes="h2" Grid.Row="0" Source="{Binding Image, Converter={StaticResource convImage}}"/>
-										<StackPanel Grid.Row="1" Margin="15">
-											<Border Grid.Row="1" Classes="b1">
-												<StackPanel>
-													<TextBlock Classes="t1" Text="{Binding Header}"/>
-													<TextBlock Classes="t1" Text="{Binding Date}"/>
-													<TextBlock Classes="t3" Text="{Binding Description}"/>
-													<TextBlock Classes="t2" Text="{Binding Price}"/>
-												</StackPanel>
-											</Border>
-										</StackPanel>
-									</Grid>
+								<Grid Classes="t" ColumnDefinitions="*" RowDefinitions="2*,*">
+									<Image Classes="h2" Grid.Row="0" Source="{Binding Image, Converter={StaticResource convImage}}"/>
+									<StackPanel Grid.Row="1" Margin="15">
+										<Border Grid.Row="1" Classes="b1">
+											<StackPanel>
+												<TextBlock Classes="t1" Text="{Binding Header}"/>
+												<TextBlock Classes="t1" Text="{Binding Date}"/>
+												<TextBlock Classes="t3" Text="{Binding Description}"/>
+												<TextBlock Classes="t2" Text="{Binding Price}"/>
+											</StackPanel>
+										</Border>
+									</StackPanel>
+								</Grid>
 							</DataTemplate>
 						</ItemsControl.ItemTemplate>
 						<ItemsControl.ItemsPanel>
